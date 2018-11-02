@@ -15,303 +15,323 @@
 
         <!--From-->
         <LinearLayout
-            android:paddingBottom="50dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
 
-    <!--RadioGroup ซื้อที่ดินอาคาร-->
-    <RadioGroup
-        android:clickable="true"
-        android:id="@+id/ragConfirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+            <!--RadioGroup ซื้อที่ดินอาคาร-->
+            <RadioGroup
+                android:id="@+id/redLandBuilding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="24dp"
-            android:text="ซื้อที่ดินอาคาร" />
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ซื้อที่ดินอาคาร"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
 
-    <!--วันที่ทำสัญญา-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--วันที่ทำสัญญา-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="วันที่ทำสัญญา"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+                <!--Tile-->
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="วันที่ทำสัญญา"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-        <!--TextFiled-->
-        <EditText
-            android:id="@+id/EditText1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#e90c0c"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#e90c0c" />
+            </LinearLayout>
 
-    <!--จำนวนเงินดาวน์รวม-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--จำนวนเงินดาวน์รวม-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="จำนวนเงินดาวน์รวม"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+                <!--Tile-->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จำนวนเงินดาวน์รวม"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#e90c0c"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#e90c0c" />
+            </LinearLayout>
 
-    <!-- จำนวนเงินโอนงวดสุดท้าย-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!-- จำนวนเงินโอนงวดสุดท้าย-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="จำนวนเงินโอนงวดสุดท้าย"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+                <!--Tile-->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="จำนวนเงินโอนงวดสุดท้าย"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#e90c0c"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#e90c0c" />
+            </LinearLayout>
 
-    <!-- Checkbox Main ได้ สัญญาจะซื้อจะขาย-->
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ได้ สัญญาจะซื้อจะขาย"
-        android:layout_marginLeft="16dp"
-        android:textSize="18dp" />
+            <!-- Checkbox Main ได้ สัญญาจะซื้อจะขาย-->
+            <CheckBox
+                android:id="@+id/checkboxYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="ได้ สัญญาจะซื้อจะขาย"
+                android:textSize="18dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="วันที่ทำสัญญา"
-        android:layout_marginLeft="52dp"
-        android:textSize="18dp"
-        android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:text="วันที่ทำสัญญา"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
-    <!--ชื่อผู้กู้ตรงกับซื้อผู้จะขาย-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--ชื่อผู้กู้ตรงกับซื้อผู้จะขาย-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ชื่อผู้กู้ตรงกับซื้อผู้จะขาย"
-            android:layout_marginLeft="52dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text="ชื่อผู้กู้ตรงกับซื้อผู้จะขาย"
+                    android:textSize="18dp" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#0c0ce9"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#0c0ce9" />
+            </LinearLayout>
 
-    <!--ชื่อผู้ขายตรงตามสารบัญ-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--ชื่อผู้ขายตรงตามสารบัญ-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ชื่อผู้ขายตรงตามสารบัญ"
-            android:layout_marginLeft="52dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text="ชื่อผู้ขายตรงตามสารบัญ"
+                    android:textSize="18dp" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#0c0ce9"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#0c0ce9" />
+            </LinearLayout>
 
-    <!-- ประเภทอาคารตรงตามนำชี้-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!-- ประเภทอาคารตรงตามนำชี้-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ประเภทอาคารตรงตามนำชี้"
-            android:layout_marginLeft="52dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="52dp"
+                    android:text="ประเภทอาคารตรงตามนำชี้"
+                    android:textSize="18dp" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:inputType="text"
-            android:textColorHint="#0c0ce9"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#0c0ce9" />
+            </LinearLayout>
 
-    <!-- Checkbox Main ไม่ได้ สัญญาจะซื้อจะขาย-->
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ไม่ได้ สัญญาจะซื้อจะขาย"
-        android:layout_marginLeft="16dp"
-        android:textSize="18dp" />
+            <!-- Checkbox Main ไม่ได้ สัญญาจะซื้อจะขาย-->
+            <CheckBox
+                android:id="@+id/checkboxNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="ไม่ได้ สัญญาจะซื้อจะขาย"
+                android:textSize="18dp" />
 
-    <!--RadioGroup ระบบสาธารณูปโภค-->
-    <RadioGroup
-        android:clickable="true"
-        android:id="@+id/ragConfirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+            <!--RadioGroup ระบบสาธารณูปโภค-->
+            <RadioGroup
+                android:id="@+id/radRabob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:textSize="24dp"
-            android:text="ระบบสาธารณูปโภค" />
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="ระบบสาธารณูปโภค"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
 
-    <!--ระบบไฟฟ้า-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--ระบบไฟฟ้า-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ระบบไฟฟ้า"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+                <!--Tile-->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ระบบไฟฟ้า"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="มี"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkboxMee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="มี"
+                    android:textSize="18dp" />
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ไม่มี"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkboxMaiMee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ไม่มี"
+                    android:textSize="18dp" />
 
-        <!--TextFiled-->
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:hint="กรอกข้อมูล"
-            android:textColorHint="#0c0ce9"
-            android:inputType="text"
-            android:textAlignment="center" />
-    </LinearLayout>
+                <!--TextFiled-->
+                <EditText
+                    android:id="@+id/EditText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="กรอกข้อมูล"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="#0c0ce9" />
+            </LinearLayout>
 
-    <!--ระบบระปา-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <!--ระบบระปา-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <!--Tile-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ระบบประปา"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+                <!--Tile-->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="ระบบประปา"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-        <!--Tile-->
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="มี"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp" />
+                <!--Tile-->
+                <CheckBox
+                    android:id="@+id/checkboxMee1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="มี"
+                    android:textSize="18dp" />
 
-        <!--Tile-->
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:textSize="18dp" />
-        <!--ตัวเลือกใน spinner-->
-        <!--1. ระบบประปา กปภ.-->
-        <!--2. ระบบประปาเอกชน-->
-        <!--3. ระบบประปาชุมชน-->
+                <!--Tile-->
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="18dp" />
+                <!--ตัวเลือกใน spinner-->
+                <!--1. ระบบประปา กปภ.-->
+                <!--2. ระบบประปาเอกชน-->
+                <!--3. ระบบประปาชุมชน-->
+            </LinearLayout>
 
-
-    </LinearLayout>
-</LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

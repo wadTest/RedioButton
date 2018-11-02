@@ -1,0 +1,3 @@
+include ':app' //Module app
+
+//ไว้ระบุว่า Project ของเรามี Module อะไรบ้าง
